@@ -26,8 +26,6 @@ const validation = Yup.object().shape({
 });
 
 export default function DataPemohonProfile({ setActive, data }) {
-  console.log(data);
-
   const formik = useFormik({
     initialValues: {
       namaPemohon: data?.namaPemohon || "",
@@ -125,7 +123,7 @@ export default function DataPemohonProfile({ setActive, data }) {
           .from("pemohon")
           .update({
             ...formik.values,
-            ktp: data?.ktp ?? upload?.ktp,
+            ktp: ktp ? upload?.ktp : data?.ktp,
           })
           .eq("id", data.id);
 
