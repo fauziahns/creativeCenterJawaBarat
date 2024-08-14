@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "../../components/globals/Navbar";
+import assets from "../../assets/assets";
 
 export default function PedomanRuangan() {
   return (
     <div className="bg-white">
         <Navbar/>
         <div className="justify-center flex">
-            <img src="src\assets\option.png" alt="" />
+            <img src={assets.option} alt="" />
         </div>
 
         <div className="flex flex-col mx-auto w-[90%] text-black">

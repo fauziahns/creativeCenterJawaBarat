@@ -10,7 +10,7 @@ export default function PCC() {
     <div className='bg-white'>
       <Navbar/>
       <div className="hero mt-11 mb-14">
-        <img src="src\assets\purwakarta.png" alt="" />
+        <img src={assets.purwakarta} alt="" />
       </div>
 
       <div className="flex mx-auto w-[80%]">

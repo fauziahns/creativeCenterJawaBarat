@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { supabase } from "../../lib/supabase";
 import Swal from "sweetalert2";
+import assets from "../../assets/assets";
 
 export default function Login() {
   const [inputValue, setInputValue] = React.useState({
@@ -138,7 +139,7 @@ export default function Login() {
           </div>
 
           <div className="">
-            <img src="src\assets\login.png" alt="" className="w-96" />
+            <img src={assets.login} alt="" className="w-96" />
           </div>
         </div>
       </div>

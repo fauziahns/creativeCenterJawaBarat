@@ -10,7 +10,7 @@ export default function AhmadDjuhara() {
     <div className='bg-white'>
       <Navbar/>
       <div className="hero mt-11 mb-14">
-        <img src="src\assets\ahmad.png" alt="" />
+        <img src={assets.ahmad} alt="" />
       </div>
 
       <div className="flex mx-auto w-[80%]">

@@ -9,7 +9,7 @@ export default function BCC() {
     <div className='bg-white'>
       <Navbar/>
       <div className="hero mt-11 mb-14">
-        <img src="src\assets\bogor.png" alt="" />
+        <img src={assets.bogor} alt="" />
       </div>
 
       <div className="flex mx-auto w-[80%]">

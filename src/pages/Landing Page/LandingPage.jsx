@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Footer from "../../components/globals/Footer";
 import Navbar from "../../components/globals/Navbar";
+import assets from "../../assets/assets";
 
 function LandingPage() {
   return (
@@ -9,7 +10,7 @@ function LandingPage() {
       {/* hero */}
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
-          <img src="src\assets\bogor.png" className="w-full" />
+          <img src={assets.bogor} className="w-full" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" className="btn btn-outline btn-circle">
               ❮
@@ -20,7 +21,7 @@ function LandingPage() {
           </div>
         </div>
         <div id="slide2" className="carousel-item relative w-full">
-          <img src="src\assets\purwakarta.png" className="w-full" />
+          <img src={assets.purwakarta} className="w-full" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" className="btn btn-outline btn-circle">
               ❮
@@ -31,7 +32,7 @@ function LandingPage() {
           </div>
         </div>
         <div id="slide3" className="carousel-item relative w-full">
-          <img src="src\assets\ahmad.png" className="w-full" />
+          <img src={assets.ahmad} className="w-full" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" className="btn btn-outline btn-circle">
               ❮
@@ -51,7 +52,7 @@ function LandingPage() {
             <p className="font-semibold text-black text-[40px]">
               Creative Center Jawa Barat
             </p>
-            <img src="src\assets\section-one.png" alt="" className="w-[60%]" />
+            <img src={assets.sectionone} alt="" className="w-[60%]" />
             <p className="mt-2 text-black font-semibold">
               Pemanfaatan fasilitas Creative Center Jawa Barat tidak dipungut
               biaya apapun.
@@ -83,7 +84,7 @@ function LandingPage() {
       <div className="flex mx-auto w-[90%] mt-24 mb-36">
         <div className="card w-96 bg-base-100 shadow-xl image-full">
           <figure>
-            <img src="src\assets\bogor.png" alt="Shoes" />
+            <img src={assets.bogor} alt="Shoes" />
           </figure>
           <div className="card-body">
             <h2 className="card-title text-white">Bogor Creative Center</h2>
@@ -103,7 +104,7 @@ function LandingPage() {
 
         <div className="card w-96 bg-base-100 shadow-xl image-full mx-4">
           <figure>
-            <img src="src\assets\purwakarta.png" alt="Shoes" />
+            <img src={assets.purwakarta} alt="Shoes" />
           </figure>
           <div className="card-body">
             <h2 className="card-title text-white">
@@ -125,7 +126,7 @@ function LandingPage() {
 
         <div className="card w-96 bg-base-100 shadow-xl image-full">
           <figure>
-            <img src="src\assets\ahmad.png" alt="Shoes" />
+            <img src={assets.ahmad} alt="Shoes" />
           </figure>
           <div className="card-body">
             <h2 className="card-title text-white">
@@ -226,7 +227,7 @@ function LandingPage() {
 
           <div className="">
             <img
-              src="src\assets\phone.png"
+              src={assets.phone}
               alt=""
               className="rounded-lg ml-8 w-[90%]"
             />

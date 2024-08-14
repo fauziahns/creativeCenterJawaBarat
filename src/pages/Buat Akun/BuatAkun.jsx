@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import { supabase } from "../../lib/supabase";
 import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import assets from "../../assets/assets";
 
 export default function BuatAkun() {
   const [inputValue, setInputValue] = React.useState({
@@ -100,7 +101,7 @@ export default function BuatAkun() {
         <div className="grid grid-cols-2  gap-2 bg-white rounded-lg shadow-sm h-100 border border-gray-200 items-center">
           <div className="">
             <img
-              src="src\assets\buatAkun.png"
+              src={assets.buatAkun}
               alt=""
               className="w-96 ml-4 rounded-lg"
             />

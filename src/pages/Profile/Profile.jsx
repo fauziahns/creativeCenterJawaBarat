@@ -5,6 +5,7 @@ import React from "react";
 import { supabase } from "../../lib/supabase";
 import convertStringify from "../../lib/convertStringify";
 import { convertRupiah } from "../../lib/convertRupiah";
+import assets from "../../assets/assets";
 
 export default function Profile() {
   const [dataDraft, setdataDraft] = React.useState(null);
@@ -273,7 +274,7 @@ export default function Profile() {
                   <div className="tooltip cursor-pointer" data-tip="Edit">
                     <NavLink to="/editPermohonan" state={{ data: item }}>
                       <img
-                        src="src\assets\editing.png"
+                        src={assets.editing}
                         alt=""
                         className="w-[21px] h-[21px] mr-2"
                       />
@@ -286,7 +287,7 @@ export default function Profile() {
                     className="tooltip cursor-pointer"
                     data-tip="Kirim"
                   >
-                    <img src="src\assets\checked.png" alt="" />
+                    <img src={assets.checked} alt="" />
                   </button>
 
                   {/* Hapus */}
@@ -298,7 +299,7 @@ export default function Profile() {
                     }}
                   >
                     <img
-                      src="src\assets\close.png"
+                      src={assets.close}
                       alt=""
                       className="w-[19px] h-[19px] ml-2"
                     />

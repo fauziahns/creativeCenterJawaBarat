@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import assets from "../../assets/assets";
 
 function Navbar() {
   const user = localStorage.getItem("user");
@@ -63,10 +64,10 @@ function Navbar() {
             </ul>
           </div>
           <NavLink to="/">
-            <img src="src\assets\logoNav.png" alt="" className="w-20" />
+            <img src={assets.logoNav} alt="" className="w-20" />
           </NavLink>
           <NavLink to="/">
-            <img src="src\assets\logoNav2.png" alt="" className="w-25" />
+            <img src={assets.logoNav2} alt="" className="w-25" />
           </NavLink>
         </div>
 
@@ -102,7 +103,7 @@ function Navbar() {
                 <div className="w-8 rounded-full">
                   <img
                     alt="Tailwind CSS Navbar component"
-                    src="src\assets\account.png"
+                    src={assets.account}
                   />
                 </div>
               </div>

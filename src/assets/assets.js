@@ -15,14 +15,39 @@ import ahmad3 from './ahmad3.png'
 import ahmad4 from './ahmad4.png'
 import ahmad5 from './ahmad5.png'
 import ahmad6 from './ahmad6.png'
+import account from './account.png'
+import bg from './bg.png'
+import buatAkun from './buatAkun.png'
+import char from './char.png'
+import char2 from './char2.png'
+import checked from './checked.png'
+import close from './close.png'
+import editing from './editing.png'
+import facebook from './facebook.png'
+import heroBogor from './heroBogor.png'
+import instagram from './instagram.png'
+import login from './login.png'
+import logoNav from './logoNav.png'
+import logoNav2 from './logoNav2.png'
+import option from './option.png'
+import phone from './phone.png'
+import sectionone from './section-one.png'
+import twitter from './twitter.png'
+import youtube from './youtube.png'
+import bogor from './bogor.png'
+import ahmad from './ahmad.png'
+import purwakarta from './purwakarta.png'
 
 export default {
     ruangan1,
+    bogor,
     bogor2,
     bogor3,
     bogor4,
     bogor5,
     bogor6,
+    purwakarta,
+    ahmad,
     purwakarta1,
     purwakarta2,
     purwakarta3,
@@ -34,5 +59,24 @@ export default {
     ahmad4,
     ahmad4,
     ahmad5,
-    ahmad6
+    ahmad6,
+    youtube,
+    twitter,
+    sectionone,
+    phone,
+    option,
+    logoNav,
+    logoNav2,
+    login,
+    instagram,
+    heroBogor,
+    facebook,
+    editing,
+    close,
+    checked,
+    char,
+    char2,
+    buatAkun,
+    bg,
+    account
 }
