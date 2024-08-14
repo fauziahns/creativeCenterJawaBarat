@@ -144,30 +144,37 @@ export default function BuatAkun() {
                 }
               />
 
-              <TextInputNonLabel
-                id={"passwordPenggunaBaru"}
-                placeholder={"Password"}
-                nama={"passwordPenggunaBaru"}
+            <div>
+              <input 
+                type="password" 
+                placeholder="Password"
+                id="passwordPenggunaBaru"
                 value={inputValue.password}
+                name="passwordPenggunaBaru"
                 onChange={(e) =>
                   setInputValue({
                     ...inputValue,
                     password: e.target.value,
                   })
                 }
-              />
-              <TextInputNonLabel
-                id={"konfirmPassPenggunaBaru"}
-                placeholder={"Konfirmasi Password"}
-                nama={"konfirmPassPenggunaBaru"}
+                className="input input-bordered w-full max-w-xs bg-white text-black placeholder:text-sm mb-4" />
+            </div>
+
+            <div>
+              <input 
+                type="password" 
+                placeholder="Password"
+                id="konfirmPassPenggunaBaru"
                 value={inputValue.konfirmPassword}
+                name="konfirmPassPenggunaBaru"
                 onChange={(e) =>
                   setInputValue({
                     ...inputValue,
                     konfirmPassword: e.target.value,
                   })
                 }
-              />
+                className="input input-bordered w-full max-w-xs bg-white text-black placeholder:text-sm mb-4" />
+            </div>
 
               <button
                 disabled={loading}
